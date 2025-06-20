@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background: linear-gradient(135deg, #4e5d77, #3f4c6b); /* Darker tones of blue and purple */
+  font-family: 'Inter', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
