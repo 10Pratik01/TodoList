@@ -35,7 +35,7 @@ const Todo = () => {
               <div>
                 <div
                   className={`${
-                    active ? "" : "hidden"
+                    todo.id == id && active ? "" : "hidden"
                   } flex gap-4 bg-gray-600 p-2 rounded-md`}
                 >
                   <form onSubmit={handleSubmit} className="flex items-center gap-2">
@@ -57,11 +57,10 @@ const Todo = () => {
                 <button
                   onClick={() => {
                     setActive(true);
-                    setId(todo.id);
-                    setUpdate(todo.text); // Pre-populate the input with the current todo text
+                    setId(todo.id); 
                   }}
                   className={`${
-                    active ? "hidden" : ""
+                    todo.id == id && active ? "hidden" : ""
                   } text-white bg-indigo-600 rounded-md px-4 py-2 hover:bg-indigo-700 transition-all duration-200`}
                 >
                   Update
